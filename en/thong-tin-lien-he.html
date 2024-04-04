@@ -1,0 +1,869 @@
+<!DOCTYPE html><!--  Last Published: Fri Apr 21 2023 19:04:35 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="64401c88486313fd20ec4846" data-wf-site="6425a9c77ca5135e5c183867">
+<head>
+  <meta charset="utf-8">
+  <title>Contacts</title>
+  <meta content="Contacts" property="og:title">
+  <meta content="Contacts" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/vinamilk.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+  [data-aos="anim-fade-in"] {
+  	opacity: 0;
+  	transition-property: opacity;
+  }
+  [data-aos="anim-fade-in"].aos-animate {
+  	opacity: 1;
+  }
+  [data-aos="anim-move-in-right"] {
+    transform: translateX(-150%);
+  	transition-property: transform;
+  }
+  [data-aos="anim-move-in-right"].aos-animate {
+    transform: translateX(0%);
+  }
+  [data-aos="anim-move-in-bot"] {
+    transform: translateY(100%);
+  	transition-property: transform;
+  }
+  [data-aos="anim-move-in-bot"].aos-animate {
+    transform: translateY(0%);
+  }
+  [data-aos="anim-move-in-right-sm"] {
+    transform: translateX(-50%);
+  	transition-property: transform;
+  }
+  [data-aos="anim-move-in-right-sm"].aos-animate {
+    transform: translateX(0%);
+  }
+  [data-aos="anim-zoom-up-fade"] {
+  	opacity: 0;
+    transform: scale(.4);
+    transform-origin: center bottom;
+  	transition-property: opacity, transform;
+  }
+  [data-aos="anim-zoom-up-fade"].aos-animate {
+  	opacity: 1;
+    transform: scale(1)
+  }
+  [data-aos="anim-zoom-up"] {
+    transform: scale(0);
+    transform-origin: center bottom;
+  	transition-property: transform;
+  }
+  [data-aos="anim-zoom-up"].aos-animate {
+    transform: scale(1)
+  }
+  .anim-rot {
+    animation: rotate 6s linear infinite;
+  }
+  .anim-rot.speed-20 {
+    animation: rotate 8s linear infinite;
+  }
+  .anim-up-down {
+    animation: updown 12s linear infinite;
+  }
+  .anim-up-down.arr {
+    animation: updownarr 6s linear infinite;
+  }
+  .anim-left-right {
+    animation: leftright 12s linear infinite;
+  }
+  .anim-left-right.sm {
+    animation: leftrightsm 12s linear infinite;
+  }
+  .anim-left-right.reset {
+    animation: leftrightreset 6s ease-out infinite;
+  }
+  .anim-left-right.reset.delay {
+    animation-delay: -3s;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  @keyframes updown {
+    0% {
+      transform: translateY(100%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  @keyframes updownarr {
+    0% {
+      transform: translateY(0%);
+    }
+    25% {
+      transform: translateY(-15%);
+    }
+    75% {
+      transform: translateY(15%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  @keyframes leftright {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes leftrightsm {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes leftrightreset {
+    0% {
+      transform: translateX(-160%);
+      opacity: 0;
+    }
+    15%, 85% {
+      opacity:1;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 0;
+    }
+  }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src=https://www.googletagmanager.com/gtag/js?id=G-NVEKX684ZM></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-NVEKX684ZM'); </script>
+</head>
+<body data-language="vn" class="body">
+  <div class="commoncss w-embed">
+    <style>
+	* {
+  	box-sizing: border-box;
+  }
+  html.lenis {
+    height: auto;
+  }
+  html {
+    font-size: 0.5208333333vw;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+  	color: currentColor;
+  }
+  .w-container:before, .w-container:after {
+    display: none;
+  }
+  @media only screen and (min-width: 1920px) {
+    html {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 1100px) and (min-width: 991px) {
+  	html {
+    	/*font-size: 0.6090909vw;*/
+    }
+  }
+  @media only screen and (max-width: 991px) {
+  	html {
+    	font-size: 1.1990407674vw; /*True 10px*/
+    }
+  }
+  @media only screen and (max-width: 767px) {
+  	html {
+    	font-size: 1.3037809648vw; /*True 10px*/
+      /*font-size: 1.3276041667vw; /* x1.25 = 12.5px */
+      font-size: 1.9556714472vw; /* x1.5 = 15px */
+    }
+  }
+  @media only screen and (max-width: 497px) {
+  	html {
+    	font-size: 2.5445292621vw; /*True 10px*/
+    }
+  }
+  .hover-un {
+  	position: relative;
+  }
+  .hover-un:after {
+  	content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    height: 0.1rem;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s cubic-bezier(0.59, 0.23, 0.22, 0.96);
+  }
+  .hover-un:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .pe-none {
+  	pointer-events: none;
+  }
+  .pe-auto {
+  	pointer-events: auto;
+  }
+  .header.on-scroll .header-logo {
+  	height: 5rem;
+  }
+  @media only screen and (max-width: 768px) {
+  	.header.on-scroll .header-logo {
+      height: 3rem;
+    }
+  }
+  .lang-dropdown {
+  	pointer-events: none;
+  }
+  .header-lang-wrap.active .ic-20 {
+  	transform: rotate(180deg);
+  }  
+  .header-lang-wrap.active .lang-dropdown {
+  	pointer-events: auto;
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .nav {
+  	pointer-events: none;
+  }
+  .nav.active .nav-wrap {
+  	pointer-events: auto;
+  }
+  .nav.active {
+  	pointer-events: auto;
+  }
+  .nav.active .nav-wrap {
+  	transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .nav.active .nav-overlay {
+  	opacity: 1;
+  }
+  .btn-hover {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: color 400ms cubic-bezier(.59, .23, .22, .96);
+  }
+  .btn-hover:after {
+    border-radius: 3.8rem 0 0 3.8rem;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.59,.23,.22,.96);
+    transition: -webkit-transform .4s cubic-bezier(.59,.23,.22,.96);
+    transition: transform .4s cubic-bezier(.59,.23,.22,.96);
+    z-index: -1;
+  }
+  .btn-hover:hover:after {
+    border-radius: 0 3.8rem 3.8rem 0;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+  .btn-solid.btn-hover:after {
+  	background: #31A9E0;
+  }
+  .btn-outline.mod-nav-download.btn-hover:after {
+  	background: #31A9E0;
+  }
+  .btn-outline.btn-hover:after {
+  	background: #005BAA
+  }
+  .page-nav-ic-wrap.inactive {
+  	pointer-events: none;
+  }
+  .header-link-wrap-drop-wrapper.pe-none.active {
+  	pointer-events: auto;
+  }
+ 	.nav-wrap {
+   	overflow-y: auto;
+   	overflow-x: hidden;
+  }
+</style>
+  </div>
+  <div class="commoncss w-embed">
+    <style>
+	.result-item-value-number {
+  	-webkit-background-clip: text;
+  	-webkit-text-stroke: .4rem transparent;
+  }
+  @media only screen and (max-width: 768px) {
+    .result-item-value-number {
+      -webkit-background-clip: text;
+      -webkit-text-stroke: .2rem transparent;
+    }	
+  }
+	.img-basic.mod-home-hero {
+  	max-height: calc(100vh - 11rem);
+  }
+  @media only screen and (max-width: 768px) {
+    .img-basic.mod-home-hero {
+      max-height: 100vh;
+    }
+  }
+  .chap1-busi-res-head {
+  	clip-path: polygon(0% 0%, calc(100% - 8.5rem) 0%, 100% 50%, calc(100% - 8.5rem) 100%, 0% 100%);
+  }
+  @media only screen and (max-width: 991px) {
+  	.chap1-busi-res-head {
+    	clip-path: unset;
+    }
+  }
+  .mod-veritcal {
+  	writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+  @media only screen and (max-width: 768px) {
+    .mod-veritcal {
+      writing-mode: unset;
+      transform: none;
+    }	
+  }
+  .chap1-sum-chart-item:not(:first-child) .chap1-sum-chart-col-wrap:before {
+  	content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 4rem;
+    background-color: #A7A9AC;
+  }
+  /*.chap1-council-item-inner:hover .chap1-council-overlay-wrap {
+  	pointer-events: auto;
+    opacity: 1;
+  }
+  .chap1-council-item-inner:hover .chap1-council-hover {
+  	transform: scale(1);
+  }
+  .chap1-council-item-wrap:nth-child(even) {
+  	transform: translateY(30.7rem);
+  }*/
+  .chap1-council-img-wrap:hover .chap1-council-img {
+  	transform: scale(1.1);
+  }
+  .ctc-main-item-body:after, .ctc-main-item-body:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 3rem;
+    background: #A7A9AC;
+    left: calc((100% / 3) - 1.1rem);
+    bottom: 3rem;
+  }
+  .ctc-main-item-body:before {
+  	left: calc((100% * 2 / 3));
+  }
+  @media only screen and (max-width: 768px) {
+  	.ctc-main-item-body:after, .ctc-main-item-body:before {
+      display: none;
+    }
+  }
+  .span-sm-unit {
+  	vertical-align: super;
+  }
+</style>
+  </div>
+  <header data-lang-current="en" class="header">
+    <div class="container grid mod-header w-container">
+      <a id="w-node-_39d0ffcc-f155-f9ef-0262-e79d617c85cc-617c85ca" href="../en/home.html" class="header-logo w-inline-block"><img src="../images/logo.png" loading="eager" alt="" class="header-logo-img"></a>
+      <div id="w-node-_39d0ffcc-f155-f9ef-0262-e79d617c85ce-617c85ca" class="header-links-wrap">
+        <div class="header-link-wrap">
+          <a data-link-header="thongdiep" href="../en/thong-diep.html" class="header-link w-inline-block">
+            <div>Messages</div>
+            <div class="ic-embed ic-8 w-embed"><svg width="100%" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.60482 2H7.39518C7.5153 2.00044 7.63257 2.03179 7.73217 2.09009C7.83177 2.14839 7.90922 2.23102 7.95473 2.32753C8.00023 2.42405 8.01176 2.53011 7.98783 2.6323C7.96391 2.7345 7.90562 2.82825 7.82034 2.90168L4.43123 5.84403C4.37477 5.89345 4.30759 5.93268 4.23358 5.95945C4.15957 5.98622 4.08018 6 4 6C3.91982 6 3.84043 5.98622 3.76642 5.95945C3.69241 5.93268 3.62523 5.89345 3.56877 5.84403L0.179664 2.90168C0.0943763 2.82825 0.0360867 2.7345 0.0121654 2.6323C-0.0117558 2.53011 -0.000234516 2.42405 0.0452728 2.32753C0.0907801 2.23102 0.16823 2.14839 0.267828 2.09009C0.367426 2.03179 0.4847 2.00044 0.60482 2V2Z" fill="currentColor"></path>
+              </svg></div>
+          </a>
+          <div class="header-link-wrap-drop-wrapper pe-none">
+            <a href="./thong-diep.html#Chairman" class="txt-14 ff-be header-link-wrap-drop-link-head">Chairman’s Message</a>
+            <a href="./thong-diep.html#CEO" class="txt-14 ff-be header-link-wrap-drop-link-head">CEO’s Message</a>
+          </div>
+        </div>
+        <div class="header-link-wrap">
+          <a data-link-header="chuong1" href="../en/chuong-1.html" class="header-link w-inline-block">
+            <div>General information</div>
+            <div class="ic-embed ic-8 w-embed"><svg width="100%" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.60482 2H7.39518C7.5153 2.00044 7.63257 2.03179 7.73217 2.09009C7.83177 2.14839 7.90922 2.23102 7.95473 2.32753C8.00023 2.42405 8.01176 2.53011 7.98783 2.6323C7.96391 2.7345 7.90562 2.82825 7.82034 2.90168L4.43123 5.84403C4.37477 5.89345 4.30759 5.93268 4.23358 5.95945C4.15957 5.98622 4.08018 6 4 6C3.91982 6 3.84043 5.98622 3.76642 5.95945C3.69241 5.93268 3.62523 5.89345 3.56877 5.84403L0.179664 2.90168C0.0943763 2.82825 0.0360867 2.7345 0.0121654 2.6323C-0.0117558 2.53011 -0.000234516 2.42405 0.0452728 2.32753C0.0907801 2.23102 0.16823 2.14839 0.267828 2.09009C0.367426 2.03179 0.4847 2.00044 0.60482 2V2Z" fill="currentColor"></path>
+              </svg></div>
+          </a>
+          <div class="header-link-wrap-drop-wrapper pe-none">
+            <a href="./chuong-1.html#chap1History" class="txt-14 ff-be header-link-wrap-drop-link-head">OUR STORY</a>
+            <a href="./chuong-1.html#chap1Business" class="txt-14 ff-be header-link-wrap-drop-link-head">VINAMILK’S BUSINESS MODEL</a>
+            <a href="./chuong-1.html#chap1Finance" class="txt-14 ff-be header-link-wrap-drop-link-head">Financial Performance SUMMARY</a>
+            <a href="./chuong-1.html#chap1Council" class="txt-14 ff-be header-link-wrap-drop-link-head">BOARD OF DIRECTORS and KEY MANAGEMENT</a>
+          </div>
+        </div>
+        <div class="header-link-wrap">
+          <a data-link-header="chuong2" href="../en/chuong-2.html" class="header-link w-inline-block">
+            <div>Business review in 2022</div>
+            <div class="ic-embed ic-8 w-embed"><svg width="100%" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.60482 2H7.39518C7.5153 2.00044 7.63257 2.03179 7.73217 2.09009C7.83177 2.14839 7.90922 2.23102 7.95473 2.32753C8.00023 2.42405 8.01176 2.53011 7.98783 2.6323C7.96391 2.7345 7.90562 2.82825 7.82034 2.90168L4.43123 5.84403C4.37477 5.89345 4.30759 5.93268 4.23358 5.95945C4.15957 5.98622 4.08018 6 4 6C3.91982 6 3.84043 5.98622 3.76642 5.95945C3.69241 5.93268 3.62523 5.89345 3.56877 5.84403L0.179664 2.90168C0.0943763 2.82825 0.0360867 2.7345 0.0121654 2.6323C-0.0117558 2.53011 -0.000234516 2.42405 0.0452728 2.32753C0.0907801 2.23102 0.16823 2.14839 0.267828 2.09009C0.367426 2.03179 0.4847 2.00044 0.60482 2V2Z" fill="currentColor"></path>
+              </svg></div>
+          </a>
+          <div class="header-link-wrap-drop-wrapper pe-none">
+            <a href="./chuong-2.html#chap2Overview" class="txt-14 ff-be header-link-wrap-drop-link-head">VIETNAM’S DAIRY INDUSTRY IN 2022</a>
+            <a href="./chuong-2.html#chap2Report" class="txt-14 ff-be header-link-wrap-drop-link-head">THE BOARD OF DIRECTORS’ and MANAGEMENT’S REPORT</a>
+            <a href="./chuong-2.html#chap2Award" class="txt-14 ff-be header-link-wrap-drop-link-head">Awards and Prizes in 2022</a>
+            <a href="./chuong-2.html#chap2Responsibility" class="txt-14 ff-be header-link-wrap-drop-link-head">CSR</a>
+          </div>
+        </div>
+        <div class="header-link-wrap">
+          <a data-link-header="chuong3" href="../en/chuong-3.html" class="header-link w-inline-block">
+            <div>Development strategy in 2023</div>
+          </a>
+        </div>
+        <div class="header-link-wrap">
+          <a data-link-header="chuong4" href="../en/chuong-4.html" class="header-link w-inline-block">
+            <div>Corporate governance</div>
+          </a>
+        </div>
+        <div class="header-link-wrap">
+          <a data-link-header="chuong5" href="../en/chuong-5.html" class="header-link w-inline-block">
+            <div>Sustainable development</div>
+          </a>
+        </div>
+        <div class="header-link-wrap">
+          <a data-link-header="chuong6" href="../en/chuong-6.html" class="header-link w-inline-block">
+            <div>Financial statements</div>
+          </a>
+        </div>
+        <div class="header-link-wrap">
+          <a data-link-header="lienhe" href="../en/thong-tin-lien-he.html" aria-current="page" class="header-link w-inline-block w--current">
+            <div>Contact</div>
+          </a>
+        </div>
+      </div>
+      <div id="w-node-_39d0ffcc-f155-f9ef-0262-e79d617c8609-617c85ca" class="header-cta">
+        <div class="header-lang-wrap mod-desktop">
+          <a data-lang="open" href="#" class="header-lang-toggle w-inline-block">
+            <div class="txt-20 ff-be toggle-lang-txt">EN</div>
+            <div class="ic-embed ic-20 w-embed"><svg width="100%" viewbox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5916 7.34167C15.5141 7.26356 15.4219 7.20156 15.3204 7.15926C15.2188 7.11695 15.1099 7.09517 14.9999 7.09517C14.8899 7.09517 14.781 7.11695 14.6794 7.15926C14.5779 7.20156 14.4857 7.26356 14.4082 7.34167L10.5916 11.1583C10.5141 11.2364 10.4219 11.2984 10.3204 11.3407C10.2188 11.383 10.1099 11.4048 9.99989 11.4048C9.88988 11.4048 9.78096 11.383 9.67941 11.3407C9.57786 11.2984 9.48569 11.2364 9.40822 11.1583L5.59155 7.34167C5.51409 7.26356 5.42192 7.20156 5.32037 7.15926C5.21882 7.11695 5.1099 7.09517 4.99989 7.09517C4.88988 7.09517 4.78096 7.11695 4.67941 7.15926C4.57786 7.20156 4.48569 7.26356 4.40822 7.34167C4.25301 7.4978 4.16589 7.70901 4.16589 7.92917C4.16589 8.14932 4.25301 8.36053 4.40822 8.51666L8.23322 12.3417C8.70197 12.8098 9.33739 13.0728 9.99989 13.0728C10.6624 13.0728 11.2978 12.8098 11.7666 12.3417L15.5916 8.51666C15.7468 8.36053 15.8339 8.14932 15.8339 7.92917C15.8339 7.70901 15.7468 7.4978 15.5916 7.34167Z" fill="currentColor"></path>
+              </svg></div>
+          </a>
+          <div class="lang-dropdown">
+            <a data-lang-replace="vn" href="../index.html" class="txt-20 ff-be lang-item-txt">VN</a>
+            <a data-lang="close" href="../en/home.html" class="txt-20 ff-be lang-item-txt active">EN</a>
+          </div>
+        </div>
+        <a href="https://www.vinamilk.com.vn/bao-cao-thuong-nien/bao-cao/2022/download-file/Vinamilk%20Annual%20Report%202022.pdf" target="_blank" class="header-btn-main w-inline-block">
+          <div>Get full report</div>
+        </a>
+        <a data-nav="open" href="#" class="nav-toggle w-inline-block">
+          <div class="ic-nav-toggle"></div>
+          <div class="ic-nav-toggle"></div>
+          <div class="ic-nav-toggle"></div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <nav class="nav">
+    <div data-nav="close" class="nav-overlay"></div>
+    <div class="container grid mod-nav pe-none w-container">
+      <div data-lenis-prevent="#" id="w-node-d44d751a-2cc2-cfdc-10d3-004e2bec5a55-2bec5a52" class="nav-wrap">
+        <div class="nav-inner">
+          <a data-nav="close" href="#" class="nav-close w-inline-block">
+            <div class="ic-embed w-embed"><svg width="100%" viewbox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 17L41.0416 41.0416" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+                <path d="M41 17L16.9584 41.0416" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+              </svg></div>
+          </a>
+          <div class="nav-links">
+            <div class="nav-link-item-wrap">
+              <a href="../en/thong-diep.html" class="txt-24 nav-link-item w-inline-block">
+                <div>Messages</div>
+              </a>
+              <div class="header-link-wrap-drop-wrap pe-none">
+                <a href="./thong-diep.html#Chairman" class="txt-14 ff-be header-link-wrap-drop-link">Chairman&#x27;s message</a>
+                <a href="./thong-diep.html#CEO" class="txt-14 ff-be header-link-wrap-drop-link">CEO&#x27;s message</a>
+              </div>
+            </div>
+            <div class="nav-link-item-wrap">
+              <a href="../en/chuong-1.html" class="txt-24 nav-link-item w-inline-block">
+                <div>Chapter 1 - general information</div>
+              </a>
+              <div class="header-link-wrap-drop-wrap pe-none">
+                <a href="./chuong-1.html#chap1History" class="txt-14 ff-be header-link-wrap-drop-link">Our story</a>
+                <a href="./chuong-1.html#chap1Business" class="txt-14 ff-be header-link-wrap-drop-link">Vinamilk&#x27;s business model</a>
+                <a href="./chuong-1.html#chap1Finance" class="txt-14 ff-be header-link-wrap-drop-link">Financial performance summary</a>
+                <a href="./chuong-1.html#chap1Council" class="txt-14 ff-be header-link-wrap-drop-link">Board of Directors and Key Management</a>
+              </div>
+            </div>
+            <div class="nav-link-item-wrap">
+              <a href="../en/chuong-2.html" class="txt-24 nav-link-item w-inline-block">
+                <div>Chapter 2 - business review in 2022</div>
+              </a>
+              <div class="header-link-wrap-drop-wrap pe-none">
+                <a href="./chuong-2.html#chap2Overview" class="txt-14 ff-be header-link-wrap-drop-link">Vietnam&#x27;s dairy industry in 2022</a>
+                <a href="./chuong-2.html#chap2Report" class="txt-14 ff-be header-link-wrap-drop-link">The Board of Directors’ and Managements&#x27; Report</a>
+                <a href="./chuong-2.html#chap2Award" class="txt-14 ff-be header-link-wrap-drop-link">Awards and Prizes in 2022</a>
+                <a href="./chuong-2.html#chap2Responsibility" class="txt-14 ff-be header-link-wrap-drop-link">CSR</a>
+              </div>
+            </div>
+            <div class="nav-link-item-wrap">
+              <a href="../en/chuong-3.html" class="txt-24 nav-link-item w-inline-block">
+                <div>Chapter 3 - development strategy in 2023</div>
+              </a>
+            </div>
+            <div class="nav-link-item-wrap">
+              <a href="../en/chuong-4.html" class="txt-24 nav-link-item w-inline-block">
+                <div>Chapter 4 - corporate governance</div>
+              </a>
+            </div>
+            <div class="nav-link-item-wrap">
+              <a href="../en/chuong-5.html" class="txt-24 nav-link-item w-inline-block">
+                <div>Chapter 5 - sustainable development</div>
+              </a>
+            </div>
+            <div class="nav-link-item-wrap">
+              <a href="../en/chuong-6.html" class="txt-24 nav-link-item w-inline-block">
+                <div>Chapter 6 - financial statements</div>
+              </a>
+            </div>
+            <div class="nav-link-item-wrap">
+              <a href="../en/thong-tin-lien-he.html" aria-current="page" class="txt-24 nav-link-item w-inline-block w--current">
+                <div>contact</div>
+              </a>
+            </div>
+          </div>
+          <div class="header-lang-wrap mod-tablet">
+            <a data-lang="open" href="#" class="header-lang-toggle w-inline-block">
+              <div class="txt-20 ff-be toggle-lang-txt">EN</div>
+              <div class="ic-embed ic-20 w-embed"><svg width="100%" viewbox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5916 7.34167C15.5141 7.26356 15.4219 7.20156 15.3204 7.15926C15.2188 7.11695 15.1099 7.09517 14.9999 7.09517C14.8899 7.09517 14.781 7.11695 14.6794 7.15926C14.5779 7.20156 14.4857 7.26356 14.4082 7.34167L10.5916 11.1583C10.5141 11.2364 10.4219 11.2984 10.3204 11.3407C10.2188 11.383 10.1099 11.4048 9.99989 11.4048C9.88988 11.4048 9.78096 11.383 9.67941 11.3407C9.57786 11.2984 9.48569 11.2364 9.40822 11.1583L5.59155 7.34167C5.51409 7.26356 5.42192 7.20156 5.32037 7.15926C5.21882 7.11695 5.1099 7.09517 4.99989 7.09517C4.88988 7.09517 4.78096 7.11695 4.67941 7.15926C4.57786 7.20156 4.48569 7.26356 4.40822 7.34167C4.25301 7.4978 4.16589 7.70901 4.16589 7.92917C4.16589 8.14932 4.25301 8.36053 4.40822 8.51666L8.23322 12.3417C8.70197 12.8098 9.33739 13.0728 9.99989 13.0728C10.6624 13.0728 11.2978 12.8098 11.7666 12.3417L15.5916 8.51666C15.7468 8.36053 15.8339 8.14932 15.8339 7.92917C15.8339 7.70901 15.7468 7.4978 15.5916 7.34167Z" fill="currentColor"></path>
+                </svg></div>
+            </a>
+            <div class="lang-dropdown">
+              <a data-lang-replace="vn" href="../index.html" class="txt-20 ff-be lang-item-txt">VN</a>
+              <a data-lang="close" href="../en/home.html" class="txt-20 ff-be lang-item-txt active">EN</a>
+            </div>
+          </div>
+          <div class="nav-download">
+            <a href="https://www.vinamilk.com.vn/bao-cao-thuong-nien/bao-cao/2022/download-file/Vinamilk%20Annual%20Report%202022.pdf" target="_blank" class="btn btn-outline mod-nav-download btn-hover w-inline-block">
+              <div class="txt-24 ff-be btn-txt">Download Annual Report</div>
+              <div class="ic-embed ic-36 btn-ic w-embed"><svg width="100%" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 27C18.7892 26.9927 19.5437 26.6747 20.1 26.115L26.55 19.68C26.8294 19.399 26.9862 19.0188 26.9862 18.6225C26.9862 18.2262 26.8294 17.846 26.55 17.565C26.4106 17.4244 26.2447 17.3128 26.0619 17.2367C25.8791 17.1605 25.683 17.1213 25.485 17.1213C25.287 17.1213 25.0909 17.1605 24.9082 17.2367C24.7254 17.3128 24.5595 17.4244 24.42 17.565L19.5 22.5L19.5 7.5C19.5 7.10217 19.342 6.72064 19.0607 6.43934C18.7794 6.15804 18.3979 6 18 6C17.6022 6 17.2207 6.15804 16.9394 6.43934C16.6581 6.72064 16.5 7.10217 16.5 7.5L16.5 22.5L11.565 17.565C11.2846 17.2825 10.9034 17.1231 10.5053 17.1217C10.1073 17.1203 9.72499 17.277 9.44253 17.5575C9.16008 17.838 9.00061 18.2192 8.9992 18.6172C8.99779 19.0152 9.15457 19.3975 9.43504 19.68L15.885 26.115C16.4451 26.6784 17.2057 26.9967 18 27Z" fill="currentColor"></path>
+                </svg></div>
+            </a>
+            <a href="https://www.vinamilk.com.vn/bao-cao-thuong-nien/bao-cao/2022/download-file/en/FINANCIAL%20STATEMENTS%20UNDER%20VAS.pdf" target="_blank" class="btn btn-outline mod-nav-download btn-hover w-inline-block">
+              <div class="txt-24 ff-be btn-txt">Download Financial Statements</div>
+              <div class="ic-embed ic-36 btn-ic w-embed"><svg width="100%" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 27C18.7892 26.9927 19.5437 26.6747 20.1 26.115L26.55 19.68C26.8294 19.399 26.9862 19.0188 26.9862 18.6225C26.9862 18.2262 26.8294 17.846 26.55 17.565C26.4106 17.4244 26.2447 17.3128 26.0619 17.2367C25.8791 17.1605 25.683 17.1213 25.485 17.1213C25.287 17.1213 25.0909 17.1605 24.9082 17.2367C24.7254 17.3128 24.5595 17.4244 24.42 17.565L19.5 22.5L19.5 7.5C19.5 7.10217 19.342 6.72064 19.0607 6.43934C18.7794 6.15804 18.3979 6 18 6C17.6022 6 17.2207 6.15804 16.9394 6.43934C16.6581 6.72064 16.5 7.10217 16.5 7.5L16.5 22.5L11.565 17.565C11.2846 17.2825 10.9034 17.1231 10.5053 17.1217C10.1073 17.1203 9.72499 17.277 9.44253 17.5575C9.16008 17.838 9.00061 18.2192 8.9992 18.6172C8.99779 19.0152 9.15457 19.3975 9.43504 19.68L15.885 26.115C16.4451 26.6784 17.2057 26.9967 18 27Z" fill="currentColor"></path>
+                </svg></div>
+            </a>
+          </div>
+        </div>
+        <div class="nav-bg-offset"></div>
+      </div>
+    </div>
+  </nav>
+  <div data-pagename="lienhe" class="main">
+    <div class="sc-ctc-main wf-section">
+      <div class="container grid w-container">
+        <div id="w-node-_757de092-ce85-ae09-eb52-33732c8c0e8a-20ec4846" class="ctc-main-logo-wrap">
+          <div data-aos="fade-up" class="ctc-main-logo"><img src="../images/logo-VNM.png" loading="lazy" alt="" class="img-basic"></div>
+          <div data-aos-delay="100" data-aos="fade-up" class="txt-20 ff-be ctc-main-logo-txt">Vietnam Dairy Products Joint Stock Company</div>
+        </div>
+        <div id="w-node-_567b2946-3bb2-065f-bba1-a23f6c51b895-20ec4846" class="ctc-main-content">
+          <h1 data-aos="fade-up" class="heading h-fs40 ctc-main-title">Contact</h1>
+          <div data-aos="fade-up" class="ctc-main-item">
+            <div class="ctc-main-item-head active">
+              <div class="txt-32 ctc-main-head-txt">HEADQUARTER</div>
+            </div>
+            <div class="ctc-main-item-body-hq">
+              <div class="txt-20 ff-be ctc-main-body-hq-txt">10 Tan Trao, Tan Phu Ward, District 7, Ho Chi Minh City, Vietnam</div>
+              <a href="tel:(+84.28)54155555" id="w-node-_55cf5051-f32d-b122-ead9-adfa947cf9af-20ec4846" class="txt-20 ff-be ctc-main-body-hq-txt"><span class="span-hl-blue sbold no-cap">Tel:</span> (+84. 28) 54 155 555</a>
+              <a href="tel:(+84.28)54161226" class="txt-20 ff-be ctc-main-body-hq-txt"><span class="span-hl-blue sbold no-cap">Fax:</span> (+84. 28) 54 161 226</a>
+              <div class="txt-20 ff-be ctc-main-body-hq-txt"><span class="span-hl-blue sbold no-cap">Website:</span>
+                <a href="http://www.vinamilk.com.vn" target="_blank">www.vinamilk.com.vn/</a><br>
+                <a href="http://www.vuoncaovietnam.com" target="_blank">www.vuoncaovietnam.com/</a><br>
+                <a href="http://www.youtube.com/user/vinamilk" target="_blank">www.youtube.com/user/vinamilk</a>
+              </div>
+            </div>
+          </div>
+          <div data-aos-delay="100" data-aos="fade-up" class="ctc-main-item">
+            <a data-accord="head" href="#" class="ctc-main-item-head w-inline-block">
+              <div class="txt-32 ctc-main-head-txt">sales branches</div>
+            </a>
+            <div data-accord="body" class="ctc-main-item-body">
+              <div id="w-node-_4c1e97b6-17ff-fa5f-ae91-2fb2aff7c9b7-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">1. BRANCH IN HA NOI</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">11th Floor, Tower B, Handi Resco Building, 521 Kim Ma, Ngoc Khanh Ward, Ba Dinh District, Ha Noi<br><span class="span-hl-sbold">Tel:</span> (+84. 24) 37 246 019 <br><span class="span-hl-sbold">Fax:</span> (+84. 24) 37 246 005</div>
+                </div>
+              </div>
+              <div id="w-node-_7c02c197-9bad-4f01-4ad5-5c8462190502-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">2. BRANCH IN DA NANG</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">7th Floor, Danang Post Office Tower, 271 Nguyen Van Linh, Vinh Trung Ward, Thanh Khe District, Da Nang City<br><span class="span-hl-sbold">Tel:</span> (+84. 236) 3 584 848<br><span class="span-hl-sbold">Fax:</span> (+84. 236) 3 897 223</div>
+                </div>
+              </div>
+              <div id="w-node-ad7feca6-4f01-a50d-b9b2-b487a5d7336b-20ec4846" class="ctc-main-sub-item last">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">3. BRANCH IN CAN THO</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Vietnam Dairy Products Joint Stock Company’s Branch in Can Tho – 77-77B Vo Van Tan, Tan An Ward, Ninh Kieu District, Can Tho City<br><span class="span-hl-sbold">Tel:</span> (+84. 292) 6 256 555<br><span class="span-hl-sbold">Fax:</span> (+84. 292) 6 255 969</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos-delay="200" data-aos="fade-up" class="ctc-main-item">
+            <a data-accord="head" href="#" class="ctc-main-item-head w-inline-block">
+              <div class="txt-32 ctc-main-head-txt">DEPENDENT UNITS</div>
+            </a>
+            <div data-accord="body" class="ctc-main-item-body">
+              <div id="w-node-_0ab838df-891f-9bbe-d1ce-f23c6e26b5b5-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">1. CAN THO DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Tra Noc Industrial Park, Can Tho City<br><span class="span-hl-sbold">Tel:</span> (+84. 292) 6 258 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 292) 6 255 998</div>
+                </div>
+              </div>
+              <div id="w-node-_09ce709c-eff1-6234-ce88-f2de5ea9bc19-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">2. TRUONG THO DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">32 Dang Van Bi, Thu Duc District, Ho Chi Minh City <br><span class="span-hl-sbold">Tel:</span> (+84. 28) 62 527 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 28) 38 966 884</div>
+                </div>
+              </div>
+              <div id="w-node-_7a9f647e-75ea-5619-2abe-cc263ebdd42b-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">3. THONG NHAT DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">12 Dang Van Bi, Truong Tho Ward, Thu Duc City, Ho Chi Minh City<br><span class="span-hl-sbold">Tel:</span> (+84. 28) 62 529 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 28) 62 885 727</div>
+                </div>
+              </div>
+              <div id="w-node-dc32cb74-0dfd-d6b5-a334-e5ef575ac764-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">4. SAIGON DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Tan Thoi Hiep Industrial Park, District 12, Ho Chi Minh City <br><span class="span-hl-sbold">Tel:</span> (+84. 28) 62 528 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 28) 37 176 353</div>
+                </div>
+              </div>
+              <div id="w-node-_0ab838df-891f-9bbe-d1ce-f23c6e26b5c3-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">5. DIELAC DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Bien Hoa I Industrial Park,Dong Nai Province<br><span class="span-hl-sbold">Tel:</span> (+84. 251) 6 256 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 251) 3 836 015</div>
+                </div>
+              </div>
+              <div id="w-node-_0ab838df-891f-9bbe-d1ce-f23c6e26b5d1-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">6. VIETNAM POWDERED MILK FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">9 Tu Do Boulevard – Vietnam-Singapore Industrial Park, Thuan An District, Binh Duong Province<br><span class="span-hl-sbold">Tel:</span> (+84. 274) 3 799 628 <br><span class="span-hl-sbold">Fax:</span> (+84. 274) 3 799 625</div>
+                </div>
+              </div>
+              <div id="w-node-c2573efd-7b7e-9108-de8c-ff5e245fb272-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">7. VIETNAM DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">My Phuoc II Industrial Park, Binh Duong Province <br><span class="span-hl-sbold">Tel:</span> (+84. 274) 3 559 988 <br><span class="span-hl-sbold">Fax:</span> (+84. 274) 3 559 960</div>
+                </div>
+              </div>
+              <div id="w-node-_06f6a68f-80e9-1094-f2c4-70aa50a4d9d6-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">8. VIETNAM BEVERAGE FACTOR</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">My Phuoc II Industrial Park, Binh Duong Province<br><span class="span-hl-sbold">Tel:</span> (+84. 274) 3 556 839<br><span class="span-hl-sbold">Fax:</span> (+84. 274) 3 556 890</div>
+                </div>
+              </div>
+              <div id="w-node-f7d9652c-f7c3-6a60-08f4-fd9fe730a966-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">9. DA NANG DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Hoa Khanh Industrial Park,Da Nang City <br><span class="span-hl-sbold">Tel:</span> (+84. 236) 6 259 777 <br><span class="span-hl-sbold">Fax:</span> (+84. 236) 6 259 555</div>
+                </div>
+              </div>
+              <div id="w-node-_3ff5ae92-0720-36b8-992d-3319631bb9b2-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">10. BINH DINH DAIRY FACTOR</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">87 Hoang Van Thu,Quang Trung Ward, Quy Nhon City, Binh Dinh Province<br><span class="span-hl-sbold">Tel:</span> (+84. 256) 6 253 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 256) 3 746 065</div>
+                </div>
+              </div>
+              <div id="w-node-ccdc3809-dcb8-4e06-2d03-5d9c37b91a47-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">11. NGHE AN DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Đường Sào Nam, Xã Nghi Thu, Thị Xã Cửa Lò, Nghệ AnSao Nam Street, Nghi Thu Ward,Cua Lo Town, Nghe An Province <br><span class="span-hl-sbold">Tel:</span> (+84. 238) 6 259 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 238) 3 824 717</div>
+                </div>
+              </div>
+              <div id="w-node-d38a3ce4-e749-e2df-83a5-682c79365d13-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">12. TIEN SON DAIRY FACTORY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Tien Son Industrial Park, Bac Ninh Province <br><span class="span-hl-sbold">Tel:</span> (+84. 222) 3 739 568 <br><span class="span-hl-sbold">Fax:</span> (+84. 222) 3 714 814</div>
+                </div>
+              </div>
+              <div id="w-node-f7e46325-a9eb-43de-0cf4-fa14f12776f9-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">13. LAM SON DAIRY FACTOR</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Le Mon Industrial Zone, Thanh Hoa City, Thanh Hoa Province <br><span class="span-hl-sbold">Tel:</span> (+84. 237) 3 912 540 <br><span class="span-hl-sbold">Fax:</span> (+84. 237) 3 912 541</div>
+                </div>
+              </div>
+              <div id="w-node-_3a153286-82e7-f3f7-acc1-485ccb30eb36-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">14. HO CHI MINH LOGISTIC ENTERPRISE</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">32 Dang Van Bi, Thu Duc District, Ho Chi Minh City<br><span class="span-hl-sbold">Tel:</span> (+84. 28) 62 526 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 28) 38 960 804</div>
+                </div>
+              </div>
+              <div id="w-node-_60d79878-e4d7-49ee-658d-8fa7c9bbf7cd-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">15. HANOI CITY LOGISTIC ENTERPRISE</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Km 10 Highway 5, Duong Xa Commune, Gia Lam District,Ha Noi City <br><span class="span-hl-sbold">Tel:</span> (+84. 24) 36 789 489 <br><span class="span-hl-sbold">Fax:</span> (+84. 24) 38 276 966</div>
+                </div>
+              </div>
+              <div id="w-node-_4c82573d-47c6-9650-6911-3b1e1e8971f9-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">16. AN KHANG CLINIC – PHARMACY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">184-186-188 Nguyen Dinh Chieu, Ward 6, District 3, Ho Chi Minh City<br><span class="span-hl-sbold">Tel:</span> (+84. 28) 39 302 785 <br><span class="span-hl-sbold">Fax:</span> (+84. 28) 39 302 708</div>
+                </div>
+              </div>
+              <div id="w-node-_09569b3f-f7d6-a904-25f3-58a666071c13-20ec4846" class="ctc-main-sub-item last">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">17. CU CHI RAW MILK CENTER</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Lot B14-1, B14-2 D4, Dong Nam Industrial Zone, Hoa Phu Commune, Cu Chi District, Ho Chi Minh<br><span class="span-hl-sbold">Tel:</span> (+84. 292) 3735 0030</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos-delay="300" data-aos="fade-up" class="ctc-main-item">
+            <a data-accord="head" href="#" class="ctc-main-item-head w-inline-block">
+              <div class="txt-32 ctc-main-head-txt">DOMESTIC SUBSIDIARIES, ASSOCIATES, JOINT VENTURE</div>
+            </a>
+            <div data-accord="body" class="ctc-main-item-body">
+              <div id="w-node-c746ceb9-9259-1556-31d0-3f14d77138ad-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">1. VIETNAM DAIRY COW ONE MEMBER CO., LTD.</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">10 Tan Trao, Tan Phu Ward, District 7, Ho Chi Minh City <br><span class="span-hl-sbold">Tel:</span> (+84. 28) 54 155 555<br><span class="span-hl-sbold">Fax:</span> (+84. 28) 54 161 226</div>
+                </div>
+              </div>
+              <div id="w-node-_06bf705f-bae5-8366-f901-52bd0d0d2ceb-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">2. THONG NHAT THANH HOA DAIRY COW ONE MEMBER LIMITED COMPANY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Sao Do Quarter, Thong Nhat Town, Yen Dinh District, Thanh Hoa Province <br><span class="span-hl-sbold">Tel:</span> (+84. 237) 3 514 020 <br><span class="span-hl-sbold">Fax:</span> (+84. 237) 3 599 008</div>
+                </div>
+              </div>
+              <div id="w-node-_3b3afdbb-5d4a-a278-cf5f-0e17bccbb7bd-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">3. VIETNAM SUGAR JOINT STOCK COMPANY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Thuy Xuong Village, Suoi Hiep Commune, Dien Khanh District,Khanh Hoa Province <br><span class="span-hl-sbold">Tel:</span> (+84. 258) 3 745 453 <br>(+84. 258) 3 745 424 <br><span class="span-hl-sbold">Fax:</span> (+84. 222) 3 714 814</div>
+                </div>
+              </div>
+              <div id="w-node-d0524eef-93cc-d99b-6be0-83a4d74d36a5-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">4. VIETNAM LIVESTOCK CORPORATION – JOINT STOCK COMPANY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">519 Minh Khai, Vinh Tuy Ward, Hai Ba Trung District, Ha Noi City<br><span class="span-hl-sbold">Tel:</span> (+84. 24) 38621814 <br><span class="span-hl-sbold">Fax:</span> (+84. 24) 38621688 <span class="span-hl-sbold">Website:</span>
+                    <a href="http://www.vilico.vn" target="_blank">www.vilico.vn</a>
+                  </div>
+                </div>
+              </div>
+              <div id="w-node-b5f2f364-7bc5-5c92-3009-82521031a91d-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">5. VIBEV FOOD AND BEVERAGE JOINT VENTURE COMPANY LIMITED</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">10 Tan Trao, Tan Phu Ward, District 7, Ho Chi Minh City <br><span class="span-hl-sbold">Tel:</span> (+84. 28) 54 155 555 <br><span class="span-hl-sbold">Fax:</span> (+84. 28) 54 161 226</div>
+                </div>
+              </div>
+              <div id="w-node-c746ceb9-9259-1556-31d0-3f14d77138bb-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">6. ASIA COCONUT PROCESSING JOINT STOCK COMPANY</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Lot EI-2, EI-3 and EI-4, Giao Long Industrial Park, Phase II, An Phuoc Commune, Chau Thanh District, Ben Tre Province <br><span class="span-hl-sbold">Tel:</span> (+84. 275) 3 656 999 <br><span class="span-hl-sbold">Fax:</span> (+84. 275) 3 626 999<br><span class="span-hl-sbold">Website:</span>
+                    <a href="http://www.acp.com.vn" target="_blank">www.acp.com.vn</a>
+                  </div>
+                </div>
+              </div>
+              <div id="w-node-c746ceb9-9259-1556-31d0-3f14d77138c9-20ec4846" class="ctc-main-sub-item last">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">7. APIS CORPORATION</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">No. 18A, VSIP II-A, 27 Street,Viet Nam – Singapore II-A Industrial Zone, Vinh Tan Ward, Tan Uyen District, Binh Duong Province.<br><span class="span-hl-sbold">Tel:</span> (+84. 274) 54 165 166<br><span class="span-hl-sbold">Fax:</span> (+84. 274) 54 111 066<br><span class="span-hl-sbold">Website:</span>
+                    <a href="http://www.apis-corp.com" target="_blank">www.apis-corp.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos-delay="400" data-aos="fade-up" class="ctc-main-item">
+            <a data-accord="head" href="#" class="ctc-main-item-head w-inline-block">
+              <div class="txt-32 ctc-main-head-txt">FOREIGN SUBSIDIARIES, ASSOCIATES, JOINT VENTURE</div>
+            </a>
+            <div data-accord="body" class="ctc-main-item-body">
+              <div id="w-node-_2ab88d0a-2361-31bc-5f3b-1ff66536bc42-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">1. DRIFTWOOD DAIRY HOLDING CORPORATION</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">10724 E. Lower Azusa Road, El Monte, California 91734, United States<br><span class="span-hl-sbold">Tel:</span> (+1) 1 800 864 6455 <span class="span-hl-sbold">Website: </span>
+                    <a href="http://www.driftwooddairy.com" target="_blank">www.driftwooddairy.com</a>
+                  </div>
+                </div>
+              </div>
+              <div id="w-node-_2ab88d0a-2361-31bc-5f3b-1ff66536bc50-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">2. ANGKOR DAIRY PRODUCTS CO., LTD.</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Lot P2-096 and P2-097, Phnom Penh Special Economic Zone (PPSEZ), Highway 4, Sangkat, Phleung Chhes Totes, Khan PoSenChey, Phnom Penh, Cambodia<br><span class="span-hl-sbold">Tel:</span> (+855) 24683 9999 <br><span class="span-hl-sbold">Website:</span>
+                    <a href="http://www.angkormilk.com.kh" target="_blank">www.angkormilk.com.kh</a>
+                  </div>
+                </div>
+              </div>
+              <div id="w-node-_2ab88d0a-2361-31bc-5f3b-1ff66536bc5e-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">3. LAO-JAGRO DEVELOPMENT XIENGKHOUANG CO., LTD</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">Boungvene Village, Paek District, Xiengkhouang Province, Lao P.D.R.<br><span class="span-hl-sbold">Tel:</span> (+856) 21563053 <br><span class="span-hl-sbold">Fax:</span> (+856) 21563054 <br><span class="span-hl-sbold">Email:</span>
+                    <a href="mailto:laojagro@yahoo.com">laojagro@yahoo.com</a>
+                  </div>
+                </div>
+              </div>
+              <div id="w-node-_2ab88d0a-2361-31bc-5f3b-1ff66536bc6c-20ec4846" class="ctc-main-sub-item">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">4. MIRAKA HOLDINGS LIMITED</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt">108 Tuwharetoa St, Po Box 740, Taupo 3351, New Zealand <br><span class="span-hl-sbold">Tel:</span> (+64) 7 376 0075 <br><span class="span-hl-sbold">Fax:</span> (+64) 7 377 0694 <br><span class="span-hl-sbold">Website:</span>
+                    <a href="http://www.miraka.co.nz" target="_blank">www.miraka.co.nz</a>
+                  </div>
+                </div>
+              </div>
+              <div id="w-node-_2ab88d0a-2361-31bc-5f3b-1ff66536bc7a-20ec4846" class="ctc-main-sub-item last">
+                <div class="txt-20 ff-be ctc-main-body-sub-txt">5. DEL MONTE VINAMILK DAIRY PHILIPPINES INC.</div>
+                <div class="ctc-main-sub-item-inner">
+                  <div class="txt-20 ff-be ctc-main-sub-item-inner-txt"><span class="span-hl-sbold">‍</span>JV Campos Centre, 9th Avenue corner, 30th Street, Bonifacio Global City, Taguig City, Philippines<br><span class="span-hl-sbold mod-eng">Email:</span>
+                    <a href="mailto:feedback@delmonte-phil.com">feedback@delmonte-phil.com</a> <br><span class="span-hl-sbold">Website: </span>
+                    <a href="https://lifegetsbetter.ph/our-products/dairy" target="_blank">https://lifegetsbetter.ph/our-products/dairy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6425a9c77ca5135e5c183867" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.0/bundled/lenis.js"></script>
+  <script src="../js/vinamilk.js" type="text/javascript"></script>
+</body>
+</html>
